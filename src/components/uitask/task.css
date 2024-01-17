@@ -1,0 +1,99 @@
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #002a4c;
+}
+.btn {
+  width: 15%;
+  height: 50px;
+  background: linear-gradient(to right, #cbaf22, #002a4c);
+  border-radius: 25px;
+  border: none;
+}
+.background-div {
+  width: 100%;
+  height: 70vh;
+  margin-top: 142px;
+  background: linear-gradient(to right, #002a4c, #cbaf22);
+}
+.inner-div {
+  color: white;
+  width: 93%;
+  height: 60%;
+  background: linear-gradient(to right, #002a4c, #cbaf22);
+  position: absolute;
+  top: 70px;
+  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+  box-shadow: 10px 10px 5px #cbaf22;
+  border-radius: 50px;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  padding-top: 10%;
+}
+.line {
+  width: 100%;
+}
+.carditem {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .background-div {
+    height: 90vh;
+  }
+  .inner-div {
+    height: 75%;
+    justify-content: center;
+  }
+}
+@media (max-width: 860px) and (min-width: 420px) {
+  .inner-div {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .background-div {
+    height: 78vh;
+  }
+  .carditem {
+    width: 24%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+  }
+}
+@media (max-width: 420px) {
+  .inner-div {
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .background-div {
+    height: 90vh;
+  }
+  .carditem {
+    width: 18%;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    font-size: 7px;
+  }
+  .btn {
+    width: 28%;
+    height: 50px;
+    background: linear-gradient(to right, #cbaf22, #002a4c);
+    border-radius: 5px;
+    border: none;
+  }
+}
